@@ -1,0 +1,158 @@
+* {
+-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+font-size: 16px;
+font-family: 'Merriweather', serif;
+background-color: #0075DD;
+color: #EFF8FE;
+}
+
+body{
+color: #EFF8FE;
+font-size: 1rem;
+margin: 0;
+line-height: 1.5;
+}
+
+header{
+text-align: center;
+padding-bottom: 1rem;
+}
+
+header,footer{
+display: inline-block;
+width: 100%;
+background-color: #0075DD;
+}
+
+header img{
+display: block;
+margin: 0 auto;
+margin-bottom: 1rem;
+}
+
+header a{
+background: #fff;
+padding: 0.5rem 2rem;
+color: #0089e1;
+}
+
+footer{
+padding-left: 5%;
+padding-right: 5%;
+display: flex;
+justify-content: center;
+}
+
+footer .links{
+text-align: center;
+}
+
+a{
+color: #EFF8FE;
+}
+
+h1,h2,h3{
+font-family: 'Lora', serif;
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+button{
+background-color: #0075DD;
+color: #fff;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
+border: none;
+}
+
+button#active-button{
+background-color: #222;
+}
+
+.masthead{
+background-image: url('../img/background.jpg');
+background-size: cover;
+color: #0075DD;
+background-position: center;
+padding: 4rem;
+}
+
+.masthead h2{
+text-align: center;
+}
+
+.main-content{
+max-width: 100%;
+width: 93%;
+margin: 0 auto;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 2%;
+padding-bottom: 10%;
+color: #0089e1;
+background-color: #fff;
+}
+
+.new-content p{
+color: #333;
+}
+
+.new-content .flexbox figure{
+margin: 0;
+}
+
+.flexbox2{
+display: flex;
+flex-wrap: wrap;
+}
+.flexbox2 figure{
+margin: 0;
+flex-basis: 100%;
+padding: 1rem;
+}
+
+/*desktop media query*/
+@media (min-width: 60rem) {
+body{
+font-size: 1.5rem;
+}
+
+.new-content .flexbox h1{
+padding-left: 2rem;
+}
+
+.new-content .flexbox figure{
+max-width: 40%;
+width: 40%;
+float: left;
+object-fit: contain;
+object-position: top;
+margin: 24px 40px;
+}
+
+.new-content .flexbox div{
+margin: 0;
+padding-left: 2rem;
+}
+
+.flexbox2 figure{
+margin: 0;
+flex-basis: 50%;
+}
+}
+
+@media (min-width: 80rem){
+.flexbox2 figure{
+flex-basis: 33%;
+}
+}
+
